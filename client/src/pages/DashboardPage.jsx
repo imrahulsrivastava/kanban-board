@@ -14,16 +14,24 @@ function DashboardPage() {
 
   const dispatch = useDispatch();
 
-  const pending = todos?.filter((todo) => todo.status === "pending") || [];
+  const pending =
+    todos
+      ?.filter((todo) => todo.status === "pending")
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) || [];
   const inProgress =
-    todos?.filter((todo) => todo.status === "in_progress") || [];
-  const completed = todos?.filter((todo) => todo.status === "completed") || [];
+    todos
+      ?.filter((todo) => todo.status === "in_progress")
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) || [];
+  const completed =
+    todos
+      ?.filter((todo) => todo.status === "completed")
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) || [];
 
   useEffect(() => {
     dispatch(getTodos);
     toast.success("Fetched all todos successfully", {
-        position: "top-right",
-      });
+      position: "top-right",
+    });
   }, [dispatch]);
 
   useEffect(() => {
