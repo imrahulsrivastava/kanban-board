@@ -1,6 +1,6 @@
 import cors from "cors";
 
-const whitelist = ["https://kanban-board-l6zn.onrender.com"];
+const whitelist = ["https://kanban-board-accio-mern-assignment.onrender.com"];
 
 function handleOrigin(origin, callback) {
   console.log("Origin received:", origin);

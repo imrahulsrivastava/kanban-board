@@ -1,4 +1,4 @@
-const base_url = "https://kanban-board-l6zn.onrender.com";
+const base_url = "https://kanban-board-accio-mern-assignment.onrender.com";
 
 export const API = {
   AUTH: {
