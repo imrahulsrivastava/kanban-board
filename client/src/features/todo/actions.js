@@ -10,9 +10,6 @@ export const fetchAllTodos = createAsyncThunk(
       const response = await axios.get(`${API.TODOS.GET_TODOS}`, {
         withCredentials: true,
       });
-      toast.success("Fetched all todos successfully", {
-        position: "top-right",
-      });
       return response.data;
     } catch (err) {
       console.error(err);

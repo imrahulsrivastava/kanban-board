@@ -40,7 +40,7 @@ function Register({ handleOnSubmitRegister }) {
               name="fullname"
               placeholder="Enter your full name"
               required
-              autoComplete="name"
+              autoComplete="off"
               value={fullname}
               onChange={(e) => setFullname(e.target.value)}
               className="rounded-md border border-gray-300 px-4 py-2 text-base placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -55,7 +55,7 @@ function Register({ handleOnSubmitRegister }) {
               name="username"
               placeholder="Enter your username"
               required
-              autoComplete="username"
+              autoComplete="off"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="rounded-md border border-gray-300 px-4 py-2 text-base placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -70,7 +70,7 @@ function Register({ handleOnSubmitRegister }) {
               name="email"
               placeholder="Enter your email"
               required
-              autoComplete="email"
+              autoComplete="off"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="rounded-md border border-gray-300 px-4 py-2 text-base placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -85,7 +85,7 @@ function Register({ handleOnSubmitRegister }) {
               name="password"
               placeholder="Enter your password"
               required
-              autoComplete="new-password"
+              autoComplete="off"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="rounded-md border border-gray-300 px-4 py-2 text-base placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"

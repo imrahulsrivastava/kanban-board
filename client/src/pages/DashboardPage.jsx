@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import toast from "react-hot-toast";
 import { fetchAllTodos } from "@/features/todo/actions";
 import AddTodo from "@/components/Todo/AddTodo";
 import ShowTodo from "@/components/Todo/ShowTodo";
@@ -20,6 +21,9 @@ function DashboardPage() {
 
   useEffect(() => {
     dispatch(getTodos);
+    toast.success("Fetched all todos successfully", {
+        position: "top-right",
+      });
   }, [dispatch]);
 
   useEffect(() => {
