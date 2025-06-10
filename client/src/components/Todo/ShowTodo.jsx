@@ -40,7 +40,7 @@ function Todo({ tasks }) {
           >
             <h4 className="text-lg font-bold text-gray-800">{todo.title}</h4>
             <p
-              className={`text-sm text-gray-600 ${todo.status === "in_progress" && "my-[1.6rem]"}`}
+              className="text-sm text-gray-600"
             >
               {todo.description}
             </p>
