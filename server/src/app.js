@@ -3,11 +3,8 @@ import express from "express";
 import corsMiddleware from "./config/cors.js";
 import path from "path";
 
-const __dirname = path.resolve();
-
-console.log(path.join(__dirname, "..", "client", "dist", "index.html"));
-
 const app = express();
+const __dirname = path.resolve();
 
 app.use(corsMiddleware);
 
