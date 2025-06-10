@@ -23,7 +23,7 @@ function DashboardPage() {
   }, [dispatch]);
 
   useEffect(() => {
-    if (!todos) dispatch(fetchAllTodos());
+    if (todos && todos.length === 0) dispatch(fetchAllTodos());
   }, []);
 
   return (
